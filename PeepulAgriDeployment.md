@@ -51,3 +51,34 @@ ngnix server
 dev-api.peepuagr.com -> 3000
 staging-api.peepuagr.com -> 4000
 prod-api.peepuagr.com -> 4000
+
+
+cd /etc/nginx/sites-available/
+
+
+sudo nano staging-api-farmlogs.peepulagri.com
+
+server {
+    server_name staging-api-farmlogs.peepulagri.com;
+
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        fastcgi_read_timeout 540;
+        proxy_connect_timeout 3000s;
+        proxy_send_timeout   3000;
+        proxy_read_timeout   3000;
+    }
+}
+server {
+    listen 80;
+    server_name staging-api-farmlogs.peepulagri.com;
+}
+
+
+
+

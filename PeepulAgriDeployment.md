@@ -25,7 +25,7 @@ Staging Lightsail - Ubuntu
 
     ecosystem.config.js
 
-
+ mv api-farmlogs.peepulagri.com staging-api-farmlogs.peepulagri.com
 
 1. DEV 
    ubuntu@43.205.227.24
@@ -36,6 +36,7 @@ Staging Lightsail - Ubuntu
 
 130.12.23.34:3000/v1.0
 dev-api-formalogs.peepul.agri .com
+
 
 DNS - DOMAIN NAME SYSTEM
 

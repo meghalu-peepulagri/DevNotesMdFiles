@@ -57,7 +57,7 @@ cd /etc/nginx/sites-available/
 
 
 sudo nano staging-api-farmlogs.peepulagri.com
-
+```
 server {
     server_name staging-api-farmlogs.peepulagri.com;
 
@@ -78,7 +78,7 @@ server {
     listen 80;
     server_name staging-api-farmlogs.peepulagri.com;
 }
-
+```
 
 
 

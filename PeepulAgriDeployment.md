@@ -46,6 +46,8 @@ API3 - 5000
 API4 - 6000
 
 
+https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04
+
 ngnix server
 
 dev-api.peepuagr.com -> 3000
@@ -53,7 +55,10 @@ staging-api.peepuagr.com -> 4000
 prod-api.peepuagr.com -> 4000
 
 
+
 cd /etc/nginx/sites-available/
+
+
 
 
 sudo nano staging-api-farmlogs.peepulagri.com
